@@ -1,0 +1,32 @@
+{
+  "name": "sample-web-server",
+  "version": "1.0.0",
+  "description": "Sample web server.",
+  "keywords": [
+    "roblox",
+    "erringpaladin10",
+    "tricky3685",
+    "superdude123456",
+    "vtil",
+    "vtilserver"
+  ],
+  "license": "MIT",
+  "author": "ErringPaladin10@VTILServer.com",
+  "type": "module",
+  "main": "serverHost.js",
+  "scripts": {
+    "start": "nodemon serverHost.js",
+    "node-start": "node serverHost.js",
+    "pm2-start": "pm2 start serverHost.js --name \"sample-web-server\"",
+    "pm2-stop": "pm2 stop \"sample-web-server\"",
+    "pm2-restart": "pm2 restart \"sample-web-server\"",
+    "pm2-status": "pm2 status \"sample-web-server\""
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11",
+    "pm2": "^6.0.14"
+  }
+}

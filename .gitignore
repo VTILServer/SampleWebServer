@@ -1,0 +1,6 @@
+*.log
+auditlogs/
+.env
+node_modules/
+package-lock.json
+logs/
