@@ -15,14 +15,13 @@ cd /d "%CURRENT_DIR%..\.."
 if not exist ".env" (
     echo Creating .env file...
     echo PORT=3000> .env
-    echo API_KEY=your_api_key_here>> .env
     echo WAIT_TIME_MS=1000>> .env
     echo .env file created.
 ) else (
     echo .env file already exists. Skipping creation.
 )
 
-echo Environment setup complete.
+echo Environment setup complete, run the /generator/generateapikey.bat to create an API key.
 
 pause
 exit /b 0
